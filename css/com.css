@@ -1,0 +1,63 @@
+.fs_section {
+    padding-top: 87px!important;
+    padding-bottom: 87px!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.fs_section0 {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.fsc_min132 {
+    min-height: 132px;
+}
+.fs_img {
+   /* background-image: url(/Flexi/ready/images/themes/commonBackgrnd.jpg);
+    background: #e62f2d;
+    background-position: fixed center;
+    background-size: contain;
+    background: no-repeat;*/
+    
+    background: #e62f2d;
+    background-size: 100 100;
+    background-position: center;
+}
+.fs_relative {
+    position: relative;
+}
+.fsc_ab1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+.a-center {
+    text-align: center;
+}
+.fsc_brdr-n {
+    border: none !important;
+    border-radius: 0px !important;
+}
+.modal-content {
+    margin-top: 25%;
+}
+.modal-dialog_fs {
+    max-width: 90%!important;
+}
+.modal-content_fs {
+    margin: 7% auto!important;
+    border: none!important;
+    border-radius: 0px!important;
+}
+.fs_section {
+    padding-top: 87px!important;
+    padding-bottom: 87px!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+.fs_section0 {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}

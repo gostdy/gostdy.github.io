@@ -1,0 +1,494 @@
+    
+
+.next_icon {
+    position: absolute!important;
+    height: 40px!important;
+    width: 40px!important;
+    top: 99%!important;
+    background: #262626;
+    /*border-radius //: 50%; background: #262626; 
+border //:3px solid white;*/
+}
+.prev_icon {
+    position: absolute!important;
+    height: 40px!important;
+    width: 40px!important;
+    top: 99%!important;
+    background: #262626;
+    /*border-radius //: 50%; background: #262626; 
+border //:3px solid white;*/
+}
+
+
+/** Enable smooth scrolling on html **/
+html {
+  scroll-behavior: smooth;
+}
+
+
+a{color: silver;}
+a:hover {color: blue;}
+a.card-link{color: white;}
+/** section **/
+section{
+    border-bottom: 1px solid rgba(211, 211, 211, 0.74);
+}
+
+/** SCROLL BAR styling AA **/
+.scrollBarThin::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: 5px;
+}
+.scrollBarThin::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+    width: 5px;
+}
+.scrollBarThin::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #2fa0af;
+    width: 5px;
+}
+
+/* utube */
+.youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+        /*background: url("../images/themes/noExecutses.jpg") no-repeat;*/
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+        cursor: pointer;
+    }
+/*  */
+
+/** content handling classes **/
+/** Must be wrapped inside bootstrap's container. Also make BS's container relative **/ 
+.fs_container{
+    position: relative; /* absolute */  
+    left: 0px;
+    /** these below two combination should make this box vertically aligned **/
+    /*top: 76px;*/
+    padding-top: 40px;
+    padding-bottom: 40px;
+   /* min-height: 590px;*/
+    height: auto;
+    width:100%;
+    /*padding: 0px !important;*/
+    overflow: hidden;
+/*    margin: 0px auto;*/
+}
+
+/*** Image in overlay  ***/
+.abImageHeader {
+    position: absolute;
+    background-size: cover;
+    background-position: 50%;
+    /*background-position: top;*/
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+/** FEW OVERLAYS colors ***/
+.fs_overlayBlack{ background-color: #223547; /*rgba(0, 0, 0, 0.45);*/  }
+.fs_overlayBlack_O{ background-color: rgba(34, 53, 71, 0.4); /*rgba(0, 0, 0, 0.45);*/  } //with opacity
+.fs_overlayWhite{ background-color: rgba(255, 255, 255, 0.45); }
+.fs_overlayGray{ background-color: rgba(169, 169, 169, 0.45);}
+.fs_overlayGoStdy{ background-color: /*#e62f2d;*/  rgba(236, 89, 88, 0.69);}
+
+
+/** Actual contents should go in the below boxes. FOR the moment not used due to less time for testing **/
+.fs_contentBoxFull{ 
+    width: 100%; 
+    max-height: 100%;
+    overflow: hidden;
+}
+.fs_contentBoxFull1 {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+}
+.fs_contentBoxFull1::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.fs_contentBox100_R{  /* Make this box responsive. On mobile make it 90%*/
+    width: 60%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.fs_contentBox60_R{  /* Make this box responsive. On mobile make it 90%*/
+    width: 60%;
+    max-height: 80%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.fs_contentBox60{ 
+    width: 60%;
+    max-height: 80%;
+    overflow: hidden;
+}
+
+/** height limiting boxes **/
+.fs_contentBox100H{
+    width:100%;
+    height: 100px;
+    max-height: 100px;
+    /*overflow: hidden;*/
+}
+
+/** AA's **/
+.fsT_min417 {
+    min-height: 307px;
+    overflow: auto;
+}
+
+/** boxes with just padding. The box grows with content **/
+.fs_ContentBoxAuto {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+
+
+/*** forms ***/
+.fs_formLine{ margin: 0px auto;  text-align: left; }
+.fs_radioButtonWrapper{ margin-left: 3%; padding: 6px 12px; border-width: thin; text-align: left; border: 1px solid lightGray; background-color: white; border-radius:.25rem; }
+
+.radio_underline{ width: 93%; height: 6px;margin-left: 20px; border-bottom: 1px solid lightgray;}
+.input-group>.input-group-prepend>.input-group-text {
+    padding: .375rem .25rem;
+    background-color: white;
+    border: 1px solid #ced4da;
+}
+label.error{ color: rgba(255, 0, 0, 0.72);}
+
+/*** BOOTSTRAP extensions / customizers ***/
+.w-94{width: 94% !important;} /* being used for radio button */
+/*  Experimental animation */
+.card-title{ animation-delay: 1s; }
+.card-text{ animation-delay: 2s;}
+.card.card_border_R{ border: 1px solid lightGray; }
+/** override the list items colors **/
+    /** list groups background color **/
+.fs_list_Gray{  border-radius: 1%; }
+.fs_list_Gray .list-group-item {
+    background-color: transparent;
+}
+.fs_list_White{
+   border-radius: 1%;
+}
+.fs_list_White .list-group-item {
+    background-color: #223547;
+}
+
+/* put icon before anchor text */
+.fs_Wrapper {
+    min-width: 15px;
+    width: auto;
+    min-height: 23px;
+    height: auto;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+/** Floats **/
+.fs_floatLeft{ float: left; }
+.fs_floatRight{ float: right; }
+/** TBD encorporate all nine possible boxes position **/
+
+.p1{
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* Chrome */
+    word-wrap: break-word; /* IE */
+}
+
+/** FEW predefined common background colors **/
+.bckgrnd_GoStdy{ background: rgba(230, 47, 45, 0.71); }
+.bckgrnd_Fs{ background: #ced600; }
+.bckgrnd_white{ background: white; }
+.bckgrnd_trans{ background: transparent; }
+.fsT_bg-pink{background-color:rgba(13,13,13,.68)!important}
+
+
+/** MODAL. Can be removed afterwards **/
+.miniModal_Body{
+    min-width: 250px; 
+    width: auto; /* Expand width as required */
+    max-width: 90%!important;
+}
+
+.fsTVerticalLine {
+    width: 1px;
+    /* color: red; */
+    background-color: rgba(102, 51, 153, 0.22);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+}
+.fsTvideoTittle {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px 14px;
+    margin-bottom: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/** Slider btn background **/
+.sliderCtrlsBackground{
+    width: auto;
+    background: rgba(255, 255, 255, 0.16);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.carousel-control{
+    position: absolute;
+    height: 50px;
+    width: 50px; 
+    top: 50%;
+    left: 10%;
+    border-radius: 50%;
+    background: red;
+}
+
+/*       ICON txt and css classes. IconBox contains defined iimage and txt. */
+.fs-iconColumn{
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 1.1;
+    border-right: 1px solid white;display: block; padding-bottom: 10px;
+}
+
+.fs-iconBox{
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.1;
+}
+
+.fs-iconTxtBox{
+    padding-left:10px;
+    position: relative;
+    float: left;
+    font-size: 11px;
+    
+}
+
+.envelop_white{
+    background: url(../images/themes/mail.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.call_White{
+    background: url(../images/themes/call_White.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.WhatsApp_White{
+    background: url(../images/themes/WhatsApp_White.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+/** div responsive positioning **/
+.div_LC_R{ margin-left: 0px; }
+
+/** spin js anims **/
+@keyframes spinner-line-fade-more{0%,100%{opacity:0}1%{opacity:1}}@keyframes spinner-line-fade-quick{0%,39%,100%{opacity:.25}40%{opacity:1}}@keyframes spinner-line-fade-default{0%,100%{opacity:.22}1%{opacity:1}}
+.spinnerOverlay{ position: absolute; width: 250px; height: 250px; top: 50%; left: 50%; margin-left: -100px; margin-top: -100px; background-color: white; z-index: 2; padding-top: 5px; padding-bottom: 5px; display: none; background-color: rgba(230, 47, 45, 0.71);}
+.spinnerContainerWrapper{ position: relative; width: 90%; height: 90%;  margin: 0px auto; padding: 5px;} 
+.spinnerTxt{width: 100%; color: white; position: absolute; top: 80%;}
+.closeBtnWrapper{ width: 100%;  height: auto; overflow: auto; }
+
+
+.fs_w100{width: 100%;} //not needed use bootstrap w-100
+    /** TEXT handler **/
+/*** Added font colors ***/
+.font_black{color:black!important;}
+.font_gray{color:gray!important;}
+.font_lightGray{color:lightGray!important;}
+.font_blue{color:darkblue!important;}
+.font_white{color:white!important;}
+.font_red{color:#ff0000!important;}
+.font_orange{color:#ffc400!important;}
+.font_trans{color:transparent!important;}
+/*** text Align ***/
+.text_Center{ text-align: center!important; }
+.text_Left{text-align: left!important;}
+.text_Right{text-align: right!important;}
+.text_LC_R{text-align: left!important;} /*Left on desktop. Center on mobile*/
+/** case handler **/
+.upper-case{ text-transform: uppercase; }
+/** text boldness small(300), average(600), bold, bolder **/
+.text_weight_small{font-weight:300;}
+.text_weight_average{font-weight:600;}
+.text_weight_bold{font-weight:bold;}
+.text_weight_bolder{font-weight:bolder;}
+
+/** words intact **/
+.text_intact{word-break: keep-all;}
+/** text sizes **/
+
+    /** headers **/
+.fsT_hd1{font-family:Archivo,sans-serif!important;font-weight:bold;font-size:70px;padding-bottom: 20px; }
+.fsT_hd2{font-family:Archivo, sans-serif!important;font-weight:bold;font-size:50px;padding-bottom: 20px;}
+.fsT_hd3{font-family:Archivo, sans-serif!important;font-weight:bold;font-size:40px;padding-bottom: 20px;}
+
+.fsT_hd_footer{font-family:Archivo,sans-serif!important;font-weight:600;font-size:25px;}
+
+.fsT_sh{font-family:Archivo, sans-serif!important; font-size: 25px; font-weight: 600;}
+.fsT_shM{font-family:Archivo, sans-serif!important; font-size: 22px; font-weight: bold;}
+.fsT_sh1{font-family:'Roboto Condensed', sans-serif!important; font-size: 20px; font-weight: 600;}
+.fsT_shd_footer{font-family:Archivo,sans-serif!important;font-weight:600;font-size:20px;}
+
+.fsT_footer{font-size:13px!important;font-weight:600!important;font-family:Farsan,cursive!important;box-shadow:7px 1px 13px #00000036;padding:3px 0}
+
+
+.fsT_txt{font-size:18px;font-family:Roboto,sans-serif;padding:0 0!important}
+.fsT_txt2{font-size:17px;font-family:Roboto,sans-serif}
+.fsT_txt4{font-size:13px;font-weight:600;font-family:Roboto,sans-serif}
+.fsT_txt3{font-size:17px; font-weight:200; font-family:Roboto,sans-serif;}
+
+
+.fsT_bodyTxt{font-size:18px; font-family:'Open Sans',sans-serif;}
+.fsT_bodyTxt_footer{font-size:15px; font-family:'Open Sans',sans-serif;}
+
+.fsT_small1{font-size:15px;font-weight:400;font-family:Roboto,sans-serif;margin-top:8px}
+.fsT_small2{font-size:15px;font-weight:800;font-family:Roboto,sans-serif;margin-top:8px}
+.fsT_footerNote{font-size:12px;font-weight:400;font-family:Roboto,sans-serif;}
+
+.fsT_logo{font-size:43px;font-family:Roboto,sans-serif;font-weight:600;}
+.fsT_st{background:#ff008ca6!important;padding:5px 11px!important;box-shadow:-4px 5px 6px #00000042}
+.fsT_bxs{box-shadow:-4px 5px 6px #00000042;border-top:1px solid #00000008;border-right:1px solid #00000003}.container .box{position:relative;box-sizing:border-box;text-align:center;margin:0 10px;overflow:hidden}
+
+.container .box .icon{width:100%;height:100%;background:#fff;transition:.5s}
+.container .box .icon .fa{font-size:25px;line-height:100px;color:#262626}
+.container .box .details{position:absolute;top:0;left:0;width:100%;height:100%;transition:.5s;color:#262626;opacity:1}
+.container .box .details h3{margin:0;padding:0;font-size:14px;color:#262626;font-family:Archivo,sans-serif!important;font-weight:600}
+
+
+.fsT_py2{padding:76px 0!important}
+
+.fsT_min300{min-height:300px}
+
+.fsT_m400{min-height:700px; }
+.fsT_m750{min-height:750px; position: relative;}
+
+.carousel-indicators li{width:15px!important;height:15px!important;border:2px solid lightGray;border-radius:50%;background-color:white!important}.carousel-indicators .active{border:2px solid orange;}.fsc_min132{min-height:232px}.fsT_min50{min-height:100px}.fsT_bg-clr1{background:rgba(0,0,0,.45)!important;color:#fff}.bg-brwn{background:rgba(0,0,0,.6)}.fsT_bg1{background-color:rgba(230, 47, 45, 0.71);color:#fff}.fsT_bg2{background-color:rgba(0,0,0,.68);color:#fff}.fsT_min400{min-height:550px}.fsT_card{background-color:transparent!important}
+
+/*svg{overflow:hidden;vertical-align:middle;padding:6px;color:white;border:3px solid;margin:5px;box-shadow:2px 2px 3px #000}*/
+
+.fsc_min60{min-height:60px}.fsT_min300{min-height:400px}
+
+.fsc_min260{min-height:130px}.fsT_min200{min-height:200px}.fsT_px1{padding:0 65px} .fsT_min270 { min-height: 279px;}
+
+
+/** CUSTOMIZED RESPONSIVE **/
+@media only screen and (min-width:0px) and (max-width:750px){
+    .fsT_px1{padding:0 0}
+    .m_mt_107{margin-top:107px}
+    .m_mt_50{margin-top:50px}
+}
+
+/* BS4  https://bootstrapcreative.com/can-adjust-text-size-bootstrap-responsive-design/ */
+/* Small devices (landscape phones, 544px and up) */
+/* lg and above */
+@media (min-width: 992px){
+    .showPosition50{ display: block!important; }
+    .showPosition90{ display: none!important; }
+}
+
+/* lg and below */
+@media (max-width: 991px) {  
+    .showPosition90{ display: block!important;  }
+    .showPosition50{ display: none!important; }
+    .fsT_hd2, .fsT_hd3{font-size:30px; padding-bottom: 15px;}
+    .fsT_hd1{font-size:35px; padding-bottom: 15px;}
+    .fsT_sh{font-size: 20px;}
+    .fsT_m750{height:auto;}
+    .boxTL{ top: 10%; /*left: 0%;*/ }
+    .fs_contentBox{ width: 80%;}
+    .fs_contentBox60_R{   width: 90%; }
+    .fs_contentBox100_R{  width: 90%; }
+    .fs_radioButtonWrapper{ margin-left: 4%;}
+    .w-94{width: 92% !important;} /** used for formLine **/
+    .fs_ContentBoxAuto {padding: 60px 20px;  }
+    .text_LC_R{text-align: center!important;} /*Left on desktop. Center on mobile*/
+    .div_LC_R{margin: 0px auto;} /*Left on desktop. Center on mobile*/
+    .card.card_border_R{ border-bottom: 1px solid lightGray; }
+    .w-75 { min-width: 100%!important; }
+}
